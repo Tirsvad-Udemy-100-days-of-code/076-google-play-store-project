@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [5b467e7] |
 
 ---
 
@@ -59,3 +59,4 @@ Go — no Mandatory criterion fails. Reviewed by reading all sources; 32 tests, 
 
 [MIL-002]: ../../milestones/mil-002-data-cleaning-exploration.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[5b467e7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/076-google-play-store-project/commit/5b467e73e6922668ed20951b04977f10cee3f14f
