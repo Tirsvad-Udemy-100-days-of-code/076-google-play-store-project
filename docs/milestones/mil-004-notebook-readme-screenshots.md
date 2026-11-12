@@ -11,7 +11,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version; Go in RC-007 (autonomous, not independent) | [785d729] |
+| 2026-11-12 | Deprecated | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version; Go in RC-007 (autonomous, not independent) | [785d729] |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Tasks 2 and 3 name the real paths (notebooks/, presentation/export.py, scripts/make_screenshots.py); delta Go in RC-013 (autonomous, not independent) | pending |
 
 ---
 
@@ -62,8 +63,8 @@ A Jupyter notebook that runs the analysis through the package, a script that exp
 | # | Task | Summary | Needs its own Use Case/User Story? | Reference |
 | --- | --- | --- | --- | --- |
 | 1 | Obtain the course CSV | The CSV comes from the course download. Downloading it needs the Product Owner's permission, given when the plan is accepted, or the Product Owner places it in `data/apps.csv`; the file stays untracked. Without it the dependent tasks stop and report. | No | |
-| 2 | Build the Jupyter notebook | Create `src/notebooks/google_play_store.ipynb` that follows the lecture order and calls the package functions, with a markdown cell per step. | No | |
-| 3 | Add the chart export script | Add `src/play_store/export.py` and a command that writes each figure to PNG with kaleido (optional `docs` extra), one file per lecture step. | No | |
+| 2 | Build the Jupyter notebook | Create `notebooks/google_play_store.ipynb` that follows the lecture order and calls the package functions, with a markdown cell per step. | No | |
+| 3 | Add the chart export script | Add `src/play_store/presentation/export.py`, `scripts/make_screenshots.py` and a command that writes each figure to PNG with kaleido (optional `docs` extra), one file per lecture step. | No | |
 | 4 | Generate a screenshot for every lecture step | Run the export on the real data to produce the images in `docs/images/` for the pie, donut, bars, scatter, grouped bar and box plots; the exploration steps get a table image. | No | |
 | 5 | Add the screenshots and run instructions to the README | Show each screenshot under its lecture step in `README.md` and explain how to run the notebook and the tests. | No | |
 
