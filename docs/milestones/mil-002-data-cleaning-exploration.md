@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version; Go in RC-005 (autonomous, not independent) | pending |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version; Go in RC-005 (autonomous, not independent) | [785d729] |
 
 ---
 
@@ -76,3 +76,4 @@ The package `src/play_store/` with functions for loading, cleaning, converting a
 [BC-001]: ../business-case.md
 [SA-001]: ../stakeholder-analysis.md
 [MIL-001]: ./mil-001-project-setup.md
+[785d729]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/076-google-play-store-project/commit/785d7293943e70d627fd9536319355092051a847

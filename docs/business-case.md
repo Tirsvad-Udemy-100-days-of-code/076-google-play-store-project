@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version; Go in RC-001 (autonomous, not independent) | pending |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version; Go in RC-001 (autonomous, not independent) | [785d729] |
 
 ---
 
@@ -141,3 +141,4 @@ Proceed — the assignment is small, the outcome is useful to three audiences an
 ---
 
 [SA-001]: ./stakeholder-analysis.md
+[785d729]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/076-google-play-store-project/commit/785d7293943e70d627fd9536319355092051a847

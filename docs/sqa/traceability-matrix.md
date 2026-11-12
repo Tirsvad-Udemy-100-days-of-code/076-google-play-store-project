@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [785d729] |
 
 ---
 
@@ -63,3 +63,4 @@ updated whenever an artifact instance is created or reviewed.
 [RC-007]: ./reviews/rc-007-mil-004.md
 [RC-008]: ./reviews/rc-008-mil-005.md
 [RC-009]: ./reviews/rc-009-mil-005-delta.md
+[785d729]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/076-google-play-store-project/commit/785d7293943e70d627fd9536319355092051a847

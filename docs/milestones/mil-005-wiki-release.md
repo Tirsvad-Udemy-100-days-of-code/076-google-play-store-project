@@ -11,8 +11,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Deprecated | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version; Go in RC-008 (autonomous, not independent) | pending |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Task 1 adds Getting-Started page with Windows and Linux guides, as S01 asked in chat; delta Go in RC-009 (autonomous, not independent) | pending |
+| 2026-11-12 | Deprecated | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version; Go in RC-008 (autonomous, not independent) | [785d729] |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Task 1 adds Getting-Started page with Windows and Linux guides, as S01 asked in chat; delta Go in RC-009 (autonomous, not independent) | [785d729] |
 
 ---
 
@@ -74,3 +74,4 @@ Wiki pages in `docs/wiki/` in English, Danish (`-da`) and Bahasa Malaysia (`-ms`
 [BC-001]: ../business-case.md
 [SA-001]: ../stakeholder-analysis.md
 [MIL-004]: ./mil-004-notebook-readme-screenshots.md
+[785d729]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/076-google-play-store-project/commit/785d7293943e70d627fd9536319355092051a847
