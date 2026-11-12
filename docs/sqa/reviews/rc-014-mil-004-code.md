@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [d7984d4] |
 
 ---
 
@@ -59,3 +59,4 @@ Go — no Mandatory criterion fails. 88 tests incl. real-data tests (10,841 / 9,
 
 [MIL-004]: ../../milestones/mil-004-notebook-readme-screenshots.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[d7984d4]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/076-google-play-store-project/commit/d7984d4520e9398256fbb300d55a38fc48d529e9
