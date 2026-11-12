@@ -1,5 +1,6 @@
 """Integration test: the course notebook runs from top to bottom."""
 
+import json
 import os
 from pathlib import Path
 
@@ -10,6 +11,8 @@ ROOT = Path(__file__).resolve().parents[2]
 NOTEBOOK = ROOT / "notebooks" / "google_play_store.ipynb"
 TIMEOUT_SECONDS = 180
 MIN_CODE_CELLS = 20
+MIN_CELLS_WITH_OUTPUTS = 20
+PLOTLY_MIME_TYPE = "application/vnd.plotly.v1+json"
 
 
 def test_notebook_executes_without_error(
@@ -40,9 +43,17 @@ def test_notebook_executes_without_error(
     assert len(code_cells) >= MIN_CODE_CELLS
 
 
-def test_committed_notebook_has_no_outputs() -> None:
-    import json
-
+def test_committed_notebook_keeps_its_outputs() -> None:
+    """The notebook is committed with outputs so it can be read on Gitea."""
     cells = json.loads(NOTEBOOK.read_text(encoding="utf-8"))["cells"]
+    code_cells = [c for c in cells if c["cell_type"] == "code"]
 
-    assert all(not c.get("outputs") for c in cells if c["cell_type"] == "code")
+    cells_with_outputs = [c for c in code_cells if c.get("outputs")]
+    has_chart = any(
+        PLOTLY_MIME_TYPE in output.get("data", {})
+        for cell in cells_with_outputs
+        for output in cell["outputs"]
+    )
+
+    assert len(cells_with_outputs) >= MIN_CELLS_WITH_OUTPUTS
+    assert has_chart
