@@ -28,7 +28,7 @@ updated whenever an artifact instance is created or reviewed.
 | [PP-001] | Project Plan | en | it | [BC-001], [SA-001] | MIL-001 to MIL-005 | [RC-003] |
 | [MIL-001] | Milestone | en | it | [PP-001] | [MIL-002] | [RC-004], [RC-010] |
 | [MIL-002] | Milestone | en | it | [MIL-001] | [MIL-003] | [RC-005], [RC-011] |
-| [MIL-003] | Milestone | en | it | [MIL-002] | [MIL-004] | [RC-006] |
+| [MIL-003] | Milestone | en | it | [MIL-002] | [MIL-004] | [RC-006], [RC-012] |
 | [MIL-004] | Milestone | en | it | [MIL-003] | [MIL-005] | [RC-007] |
 | [MIL-005] | Milestone | en | it | [MIL-004] | - | [RC-008], [RC-009] |
 
@@ -66,3 +66,4 @@ updated whenever an artifact instance is created or reviewed.
 [785d729]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/076-google-play-store-project/commit/785d7293943e70d627fd9536319355092051a847
 [RC-010]: ./reviews/rc-010-mil-001-code.md
 [RC-011]: ./reviews/rc-011-mil-002-code.md
+[RC-012]: ./reviews/rc-012-mil-003-code.md

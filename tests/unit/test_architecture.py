@@ -7,6 +7,7 @@ SOURCE = Path(__file__).resolve().parents[2] / "src" / "play_store"
 FORBIDDEN = {
     "domain": ("application", "infrastructure", "presentation"),
     "application": ("infrastructure", "presentation"),
+    "presentation": ("infrastructure",),
     "infrastructure": ("application", "presentation"),
 }
 FRAMEWORKS = ("pandas", "plotly")
@@ -41,6 +42,18 @@ def test_domain_imports_no_dataframe_or_chart_library() -> None:
         for path in (SOURCE / "domain").glob("*.py")
         for module in _imported_modules(path)
         if module.split(".")[0] in FRAMEWORKS
+    ]
+
+    assert offenders == []
+
+
+@pytest.mark.parametrize("layer", ["domain", "application"])
+def test_inner_layer_imports_no_plotly(layer: str) -> None:
+    offenders = [
+        f"{path.name} imports {module}"
+        for path in (SOURCE / layer).glob("*.py")
+        for module in _imported_modules(path)
+        if module.split(".")[0] == "plotly"
     ]
 
     assert offenders == []
