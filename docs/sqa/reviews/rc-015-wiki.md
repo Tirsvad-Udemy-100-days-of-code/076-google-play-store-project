@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [04d9840] |
 
 ---
 
@@ -57,3 +57,4 @@ Go — no Mandatory criterion fails and criterion 14 was checked on the publishe
 
 [MIL-005]: ../../milestones/mil-005-wiki-release.md
 [QC-WIKI-001]: ../../../framework/qc/artifacts/qc-wiki.md
+[04d9840]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/076-google-play-store-project/commit/04d9840682cb2d612885c4bd696bf1572197b362
