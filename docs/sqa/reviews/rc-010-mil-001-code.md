@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [835c3a5] |
 
 ---
 
@@ -59,3 +59,4 @@ Go — no Mandatory criterion fails. Only the package root and a smoke test exis
 
 [MIL-001]: ../../milestones/mil-001-project-setup.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[835c3a5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/076-google-play-store-project/commit/835c3a501b6c366da4a32e8f2961ad992a2fcd50
