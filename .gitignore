@@ -1,0 +1,34 @@
+# Secrets: personal tokens live in .env and never enter the repository
+.env
+
+# AI prompt log (public repository)
+/docs/ai-prompts/
+
+# Course data set (not redistributed; see README)
+/data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
