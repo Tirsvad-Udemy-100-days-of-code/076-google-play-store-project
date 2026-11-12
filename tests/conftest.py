@@ -1,6 +1,8 @@
 import pandas as pd
 import pytest
 
+from play_store.application.cleaning import clean_apps
+
 COLUMNS = [
     "App",
     "Category",
@@ -71,3 +73,55 @@ def numeric_apps() -> pd.DataFrame:
     df["Price"] = pd.to_numeric(df["Price"]).astype(float)
     df["Installs"] = pd.to_numeric(df["Installs"])
     return df
+
+
+def _store_row(
+    app: str,
+    category: str,
+    kind: str,
+    price: str,
+    installs: str,
+    content_rating: str,
+    genres: str,
+    reviews: int,
+) -> list[object]:
+    return [
+        app,
+        category,
+        4.0,
+        reviews,
+        10.0,
+        kind,
+        price,
+        content_rating,
+        genres,
+        "January 1, 2018",
+        "4.0 and up",
+        installs,
+    ]
+
+
+@pytest.fixture
+def store_apps() -> pd.DataFrame:
+    """Cleaned synthetic apps: 3 categories, 2 ratings, free and paid, multi-genre."""
+    free, paid = ("Free", "0"), "Paid"
+    rows = [
+        _store_row("A1", "GAME", *free, "1,000,000+", "Everyone", "Action", 1),
+        _store_row("A2", "GAME", *free, "500,000+", "Teen", "Action;Adventure", 2),
+        _store_row(
+            "A3",
+            "FAMILY",
+            *free,
+            "100,000+",
+            "Everyone",
+            "Art & Design;Pretend Play",
+            3,
+        ),
+        _store_row("A4", "FAMILY", *free, "50,000+", "Everyone", "Education", 4),
+        _store_row("A5", "TOOLS", *free, "10,000+", "Everyone", "Tools", 5),
+        _store_row("P1", "GAME", paid, "$2.99", "1,000+", "Teen", "Action", 6),
+        _store_row("P2", "GAME", paid, "$4.99", "5,000+", "Everyone", "Action", 7),
+        _store_row("P3", "FAMILY", paid, "$2.99", "100+", "Everyone", "Education", 8),
+        _store_row("P4", "TOOLS", paid, "$0.99", "10,000+", "Everyone", "Tools", 9),
+    ]
+    return clean_apps(pd.DataFrame(rows, columns=COLUMNS))
