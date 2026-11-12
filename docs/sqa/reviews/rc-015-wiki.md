@@ -10,6 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [04d9840] |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S01 | S01 accepted the wiki, including the Danish and Malay wording, in chat | pending |
 
 ---
 
@@ -51,7 +52,7 @@ Go — no Mandatory criterion fails and criterion 14 was checked on the publishe
 
 | Action | Owner | Due |
 | --- | --- | --- |
-| Read the Danish and Malay pages for wording | S01 | 2026-11-19 |
+| Read the Danish and Malay pages for wording (done: S01 accepted the wiki in chat) | S01 | 2026-11-19 |
 
 ---
 
