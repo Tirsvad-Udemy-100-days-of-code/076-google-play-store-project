@@ -30,7 +30,7 @@ updated whenever an artifact instance is created or reviewed.
 | [MIL-002] | Milestone | en | it | [MIL-001] | [MIL-003] | [RC-005], [RC-011] |
 | [MIL-003] | Milestone | en | it | [MIL-002] | [MIL-004] | [RC-006], [RC-012] |
 | [MIL-004] | Milestone | en | it | [MIL-003] | [MIL-005] | [RC-007], [RC-013], [RC-014] |
-| [MIL-005] | Milestone | en | it | [MIL-004] | - | [RC-008], [RC-009] |
+| [MIL-005] | Milestone | en | it | [MIL-004] | - | [RC-008], [RC-009], [RC-015] |
 
 ## Concern Coverage
 
@@ -69,3 +69,4 @@ updated whenever an artifact instance is created or reviewed.
 [RC-012]: ./reviews/rc-012-mil-003-code.md
 [RC-013]: ./reviews/rc-013-mil-004-delta.md
 [RC-014]: ./reviews/rc-014-mil-004-code.md
+[RC-015]: ./reviews/rc-015-wiki.md
