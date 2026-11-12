@@ -125,3 +125,84 @@ def store_apps() -> pd.DataFrame:
         _store_row("P4", "TOOLS", paid, "$0.99", "10,000+", "Everyone", "Tools", 9),
     ]
     return clean_apps(pd.DataFrame(rows, columns=COLUMNS))
+
+
+@pytest.fixture
+def course_like_apps() -> pd.DataFrame:
+    """Raw synthetic data shaped like the course CSV: NaN, duplicates, $399.99."""
+    rows = [
+        _store_row(
+            "Instagram", "SOCIAL", "Free", "0", "1,000,000+", "Teen", "Social", 10
+        ),
+        _store_row(
+            "Instagram", "SOCIAL", "Free", "0", "5,000,000+", "Teen", "Social", 50
+        ),
+        _store_row(
+            "Photo Pro",
+            "PHOTOGRAPHY",
+            "Paid",
+            "$4.99",
+            "10,000+",
+            "Everyone",
+            "Photography",
+            20,
+        ),
+        _store_row(
+            "Photo Max",
+            "PHOTOGRAPHY",
+            "Paid",
+            "$2.99",
+            "5,000+",
+            "Everyone",
+            "Photography",
+            21,
+        ),
+        _store_row(
+            "I am Rich",
+            "LIFESTYLE",
+            "Paid",
+            "$399.99",
+            "10+",
+            "Everyone",
+            "Lifestyle",
+            3,
+        ),
+        _store_row(
+            "Chess",
+            "GAME",
+            "Free",
+            "0",
+            "2,000,000+",
+            "Everyone",
+            "Board;Brain Games",
+            400,
+        ),
+        _store_row(
+            "Chess Pro", "GAME", "Paid", "$1.99", "50,000+", "Everyone", "Board", 60
+        ),
+        _store_row(
+            "Notes",
+            "PRODUCTIVITY",
+            "Free",
+            "0",
+            "300,000+",
+            "Everyone",
+            "Productivity",
+            70,
+        ),
+        _store_row(
+            "Notes Pro",
+            "PRODUCTIVITY",
+            "Paid",
+            "$0.99",
+            "20,000+",
+            "Teen",
+            "Productivity",
+            80,
+        ),
+        _store_row("Mystery", "GAME", "Free", "0", "1,000+", "Mature 17+", "Action", 5),
+        _store_row("Unrated", "TOOLS", "Free", "0", "100+", "Everyone", "Tools", 1),
+    ]
+    df = pd.DataFrame(rows, columns=COLUMNS)
+    df.loc[df["App"] == "Unrated", "Rating"] = float("nan")
+    return df
